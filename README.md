@@ -1,26 +1,4 @@
-# Pratilipi Assignment
-
-
-## Postman Collection : https://bit.ly/4eoNPqu
-
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Architecture](#architecture)
-3. [Services](#services)
-   - [User Service](#user-service)
-   - [Product Service](#product-service)
-   - [Order Service](#order-service)
-   - [GraphQL API Gateway](#graphql-api-gateway)
-4. [Setup and Installation](#setup-and-installation)
-5. [API Documentation](#api-documentation)
-6. [Authentication](#authentication)
-7. [Database](#database)
-8. [Message Queue](#message-queue)
-9. [Monitoring](#monitoring)
-10. [Testing](#testing)
-11. [Service URLs](#service-urls)
-12. [Troubleshooting](#troubleshooting)
-13. [Login Details](#login-details)
+# Personalized Notification System
 
 ## Assignment Overview
 
