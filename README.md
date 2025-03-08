@@ -19,7 +19,7 @@ Services communicate with each other using a message queue (RabbitMQ) for asynch
 
 ### User Service
 
-- **Port**: 3111
+- **Port**: 3301
 - **Responsibilities**: User registration, authentication, profile management
 - **Database**: MongoDB
 - **Key Endpoints**:
