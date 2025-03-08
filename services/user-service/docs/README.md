@@ -1,6 +1,6 @@
 ## User Service API
 
-### Base URL: `http://localhost:3001/api/users`
+### Base URL: `http://localhost:3301/api/users`
 
 ### 1. Register User
 - **Endpoint**: `/register`
