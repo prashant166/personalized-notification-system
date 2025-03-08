@@ -1,6 +1,6 @@
 ## Product Service API
 
-### Base URL: `http://localhost:3002/api/products`
+### Base URL: `http://localhost:3302/api/products`
 
 ### 1. Create Product
 - **Endpoint**: `/`
