@@ -115,34 +115,6 @@ Each service uses its own MongoDB database. Ensure MongoDB is installed and runn
 
 RabbitMQ is used for inter-service communication. Ensure RabbitMQ is installed and running, or update the `RABBITMQ_URL` in the `.env` files to point to your RabbitMQ instance.
 
-## Monitoring
-
-### RabbitMQ
-
-RabbitMQ is used for inter-service communication, enabling asynchronous messaging between microservices.
-
-- **Port**: 5672 (AMQP), 15672 (Management UI)
-- **Management UI**: http://localhost:15672
-- **Default credentials**:
-  - Username: guest
-  - Password: guest
-
-### Prometheus
-
-Prometheus is used for collecting and storing metrics from our services.
-
-- **Port**: 9090
-- **UI**: http://localhost:9090
-
-### Grafana
-
-Grafana is used for visualizing the metrics collected by Prometheus.
-
-- **Port**: 3000
-- **UI**: http://localhost:3000
-- **Default credentials**:
-  - Username: admin
-  - Password: password
 
 ## Testing
 
