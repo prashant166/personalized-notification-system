@@ -1,27 +1,6 @@
 # Pratilipi Assignment
 
 
-## Postman Collection : https://bit.ly/4eoNPqu
-
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Architecture](#architecture)
-3. [Services](#services)
-   - [User Service](#user-service)
-   - [Product Service](#product-service)
-   - [Order Service](#order-service)
-   - [GraphQL API Gateway](#graphql-api-gateway)
-4. [Setup and Installation](#setup-and-installation)
-5. [API Documentation](#api-documentation)
-6. [Authentication](#authentication)
-7. [Database](#database)
-8. [Message Queue](#message-queue)
-9. [Monitoring](#monitoring)
-10. [Testing](#testing)
-11. [Service URLs](#service-urls)
-12. [Troubleshooting](#troubleshooting)
-13. [Login Details](#login-details)
-
 ## Assignment Overview
 
 This assignment consists of three main services (User, Product, and Order) and a GraphQL API Gateway that provides a unified interface for client applications. It can also be accessed throught simple HTTP methods.
@@ -41,7 +20,7 @@ Services communicate with each other using a message queue (RabbitMQ) for asynch
 
 ### User Service
 
-- **Port**: 3001
+- **Port**: 3111
 - **Responsibilities**: User registration, authentication, profile management
 - **Database**: MongoDB
 - **Key Endpoints**:
@@ -52,7 +31,7 @@ Services communicate with each other using a message queue (RabbitMQ) for asynch
 
 ### Product Service
 
-- **Port**: 3002
+- **Port**: 3302
 - **Responsibilities**: Product management, inventory updates
 - **Database**: MongoDB
 - **Key Endpoints**:
@@ -64,7 +43,7 @@ Services communicate with each other using a message queue (RabbitMQ) for asynch
 
 ### Order Service
 
-- **Port**: 3003
+- **Port**: 3303
 - **Responsibilities**: Order processing and management
 - **Database**: MongoDB
 - **Key Endpoints**:
@@ -84,8 +63,8 @@ Services communicate with each other using a message queue (RabbitMQ) for asynch
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Enigma-52/Backend-Assignment-Pratilipi.git
-   cd Backend-Assignment-Pratilipi
+   git clone https://github.com/prashant166/personalized-notification-system.git
+   cd personalized-notification-system
    ```
 
 2. The entire project, including all microservices, RabbitMQ, Prometheus, and Grafana, can be started using a single script.
@@ -179,65 +158,11 @@ npm run test
 
 Here are the URLs for accessing various services in the project:
 
-### Services
-- User-DB:          http://localhost:8081
-- Product-DB:       http://localhost:8082
-- Orders-DB:        http://localhost:8083
-- Grafana:          http://localhost:3000
-- Prometheus:       http://localhost:9090
-- GraphQL-Gateway:  http://localhost:4000/graphql
-- RabbitMQ:         http://localhost:15672
-
 ### Microservices
-- User Service:     http://localhost:3001
-- Product Service:  http://localhost:3002
-- Order Service:    http://localhost:3003
-
-Note: Ensure all services are running before attempting to access these URLs. You can start all services using the provided script:
+- User Service:     http://localhost:3301
+- Product Service:  http://localhost:3302
+- Order Service:    http://localhost:3303
 
 ```bash
 ./scripts/start.sh
 ```
-
-## Troubleshooting
-
-If you encounter issues with the monitoring setup:
-
-1. Ensure all services are running:
-   ```
-   docker-compose ps
-   ```
-
-2. Check service logs:
-   ```
-   docker-compose logs [service_name]
-   ```
-
-3. Verify that the Prometheus targets are up:
-   - Open http://localhost:9090/targets
-   - All targets should show as "UP"
-
-4. If Grafana doesn't show data:
-   - Check the Prometheus data source configuration in Grafana
-   - Verify that Prometheus is successfully scraping metrics
-
-## Login Details
-
-Below are the login credentials for accessing various services in the project:
-
-### Mongo Express (Database Management)
-- **Username:** admin
-- **Password:** pass
-- **Access URL:** http://localhost:8081 (User DB)
-              http://localhost:8082 (Product DB)
-              http://localhost:8083 (Order DB)
-
-### RabbitMQ Management Interface
-- **Username:** guest
-- **Password:** guest
-- **Access URL:** http://localhost:15672
-
-### Grafana (Monitoring Dashboard)
-- **Username:** admin
-- **Password:** password
-- **Access URL:** http://localhost:3000
