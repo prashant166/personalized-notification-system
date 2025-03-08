@@ -1,6 +1,6 @@
 ## Order Service API
 
-### Base URL: `http://localhost:3003/api/orders`
+### Base URL: `http://localhost:3303/api/orders`
 
 ### 1. Create Order
 - **Endpoint**: `/`
