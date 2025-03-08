@@ -1,5 +1,4 @@
-# Pratilipi Assignment
-
+# Personalized Notification System
 
 ## Assignment Overview
 
